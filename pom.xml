@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>net.aperiodic</groupId>
   <artifactId>shib-unix-connector</artifactId>
-  <version>0.1</version>
+  <version>1.0</version>
   <packaging>jar</packaging>
 
   <name>Unix Account Data Connector</name>
