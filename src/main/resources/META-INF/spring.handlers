@@ -1,0 +1,1 @@
+http\://aperiodic.net/shibboleth/idp/resolver/dc = net.aperiodic.shibboleth.config.attribute.resolver.dataConnector.UnixDataConnectorNamespaceHandler

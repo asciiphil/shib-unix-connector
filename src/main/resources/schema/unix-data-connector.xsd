@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<schema targetNamespace="http://aperiodic.net/shibboleth/idp/resolver/dc"
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:resolver="urn:mace:shibboleth:2.0:resolver"
+        elementFormDefault="qualified">
+
+  <import namespace="urn:mace:shibboleth:2.0:resolver"
+          schemaLocation="classpath:/schema/shibboleth-2.0-attribute-resolver.xsd" />
+
+  <annotation>
+    <documentation>
+      This schema specifies the configuration additions for the Unix connector plugin.
+    </documentation>
+  </annotation>
+
+  <complexType name="UnixLogin">
+    <annotation>
+      <documentation>
+        A data connector to get information about a Unix account.  The account
+        username is assumed to match the principal name of the authenticated
+        person.
+      </documentation>
+    </annotation>
+  </complexType>
+
+</schema>
