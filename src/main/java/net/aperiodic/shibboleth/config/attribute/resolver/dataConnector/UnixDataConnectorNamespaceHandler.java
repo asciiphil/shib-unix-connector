@@ -7,5 +7,7 @@ public class UnixDataConnectorNamespaceHandler extends BaseSpringNamespaceHandle
     public static final String NAMESPACE = "http://aperiodic.net/shibboleth/idp/resolver/dc";
 
     public void init() {
+        registerBeanDefinitionParser(UnixDataConnectorBeanDefinitionParser.SCHEMA_NAME,
+                                     new UnixDataConnectorBeanDefinitionParser());
     }
 }
