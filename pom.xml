@@ -9,7 +9,12 @@
 
   <name>Unix Account Data Connector</name>
     
-  <!--repositories>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  </properties>
+
+  <repositories>
     <repository>
       <id>shib-release</id>
       <url>https://build.shibboleth.net/nexus/content/groups/public</url>
@@ -24,8 +29,8 @@
         <enabled>false</enabled>
       </snapshots>
     </repository>
-  </repositories-->
-
+  </repositories>
+  
   <dependencies>
     <!-- Compile dependencies -->
 
@@ -43,7 +48,12 @@
       <version>2.4</version>
       <scope>provided</scope>
     </dependency>
-        
+    <dependency>
+      <groupId>org.kohsuke</groupId>
+      <artifactId>libpam4j</artifactId>
+      <version>1.8</version>
+    </dependency>
+
     <!-- Runtime dependencies -->
 
     <!-- Test dependencies -->
@@ -55,6 +65,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.5.1</version>
         <configuration>
           <source>1.5</source>
           <target>1.5</target>

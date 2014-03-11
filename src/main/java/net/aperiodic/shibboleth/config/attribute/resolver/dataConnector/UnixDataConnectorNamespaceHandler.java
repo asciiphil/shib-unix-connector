@@ -5,4 +5,7 @@ import edu.internet2.middleware.shibboleth.common.config.BaseSpringNamespaceHand
 public class UnixDataConnectorNamespaceHandler extends BaseSpringNamespaceHandler {
 
     public static final String NAMESPACE = "http://aperiodic.net/shibboleth/idp/resolver/dc";
+
+    public void init() {
+    }
 }
